@@ -21,7 +21,7 @@ describe 'navigate' do
       post1 = Post.create(date: Date.today, rationale: "Some rationale", user_id: @user.id)
       post2 = Post.create(date: Date.today, rationale: "Some rationale 2", user_id: @user.id)
       visit posts_path
-      expect(page).to have_content(/"Some rationale"|"Some rationale 2"/) 
+      expect(page).to have_content(/Some rationale|Some rationale 2/) 
     end
   end
 
