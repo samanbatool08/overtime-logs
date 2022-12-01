@@ -1,2 +1,11 @@
-@import "bootstrap/scss/bootstrap";
+@import "bootstrap";
 @import "posts.scss";
+@import "nav.scss";
+
+.custom-nav {
+  margin-top: 15px;
+}
+
+.right-link {
+  float: right !important;
+}
