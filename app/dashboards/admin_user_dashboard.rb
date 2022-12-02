@@ -2,18 +2,18 @@ require "administrate/base_dashboard"
 
 class AdminUserDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
-    id: Field::Number,
-    email: Field::String,
-    password: Field::String,
-    first_name: Field::String,
-    last_name: Field::String,
-    posts: Field::HasMany,
-    remember_created_at: Field::DateTime,
-    reset_password_sent_at: Field::DateTime,
-    reset_password_token: Field::String,
-    type: Field::String,
-    created_at: Field::DateTime,
-    updated_at: Field::DateTime,
+    id: Field::Number.with_options(searchable: false),
+    email: Field::String.with_options(searchable: false),
+    password: Field::String.with_options(searchable: false),
+    first_name: Field::String.with_options(searchable: true),
+    last_name: Field::String.with_options(searchable: true),
+    posts: Field::HasMany.with_options(searchable: false),
+    remember_created_at: Field::DateTime.with_options(searchable: false),
+    reset_password_sent_at: Field::DateTime.with_options(searchable: false),
+    reset_password_token: Field::String.with_options(searchable: false),
+    type: Field::String.with_options(searchable: false),
+    created_at: Field::DateTime.with_options(searchable: false),
+    updated_at: Field::DateTime.with_options(searchable: false),
   }.freeze
 
 
