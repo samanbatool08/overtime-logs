@@ -8,6 +8,13 @@ module Admin
     #   send_foo_updated_email(requested_resource)
     # end
 
+    # def create
+    #   if params[:user][:password].blank?
+    #     params[:user].delete(:password)
+    #     params[:user].delete(:password_confirmation)
+    #   end
+    #   super
+    # end
     # Override this method to specify custom lookup behavior.
     # This will be used to set the resource for the `show`, `edit`, and `update`
     # actions.
