@@ -58,3 +58,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise', '~> 4.8', '>= 4.8.1'
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 gem "jquery-rails", "~> 4.3"
+gem "gritter", "1.2.0"
