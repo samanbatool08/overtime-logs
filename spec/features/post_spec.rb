@@ -49,6 +49,15 @@ describe 'navigate' do
     end
   end
 
+  describe 'new' do 
+    it 'has a link to create post from the homepage' do 
+      visit root_path 
+
+      click_link('new_post_from_nav')
+      expect(page.status_code).to eq(200)
+    end
+  end
+
   describe 'edit' do 
     before do 
       @post = FactoryGirl.create(:post)
@@ -61,7 +70,7 @@ describe 'navigate' do
       expect(page.status_code).to eq(200)
     end
   
-
+  
     it 'can be edited' do 
       visit edit_post_path(@post.id)
 
